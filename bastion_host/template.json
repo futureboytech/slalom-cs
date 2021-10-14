@@ -65,7 +65,7 @@
     },
     "variables": {
         "vNetHubPrefix": "10.0.0.0/16",
-        "subnetBastionName": "AzureBastionSubnet",
+        "subnetBastionName": "AzureBastionSubnet1",
         "subnetBastionPrefix": "10.0.0.0/27",
         "vNetSpokePrefix": "10.1.0.0/16",
         "subnetSpokeName": "Subnet-1",
@@ -73,6 +73,17 @@
         "bastionPublicIPName": "pip-bastion-01",
         "vmPublicIPName": "[concat('pip-',parameters('vmName'),'-01')]",
         "nsgName": "nsg-subnet-1"
+    },
+     "variables": {
+        "vNetHubPrefix": "10.0.0.0/16",
+        "subnetBastionName": "AzureBastionSubnet2",
+        "subnetBastionPrefix": "10.0.0.0/27",
+        "vNetSpokePrefix": "10.1.0.0/16",
+        "subnetSpokeName": "Subnet-1",
+        "subnetSpokePrefix": "10.1.0.0/24",
+        "bastionPublicIPName": "pip-bastion-01",
+        "vmPublicIPName": "[concat('pip-',parameters('vmName'),'-01')]",
+        "nsgName": "nsg-subnet-2"
     },
     "functions": [],
     "resources": [
